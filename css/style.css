@@ -44,6 +44,8 @@ ul li {
 header {
   background-color: rgb(255, 105, 0);
   color: white;
+  position: fixed;
+  width: 100%;
 }
 
 header .container {
@@ -65,15 +67,45 @@ header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px 0;
+  padding-top: 130px;
+  padding-bottom: 60px;
 }
 
 .product {
   max-width: 32%;
 }
 
+.product:hover .product-img {
+  display: none;
+}
+
+.product:hover .product-hover {
+  display: inline;
+}
+
 .product-img {
   width: 100%;
+}
+
+.product-hover {
+  display: none;
+}
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-price span {
+  color: black;
+  text-decoration: line-through;
+  font-weight: 400;
+
+  padding-left: 10px;
 }
 
 /* Footer */
