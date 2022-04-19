@@ -46,6 +46,7 @@ header {
   color: white;
   position: fixed;
   width: 100%;
+  z-index: 9;
 }
 
 header .container {
@@ -56,6 +57,10 @@ header .container {
 
 header a {
   padding: 20px 7px;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -90,6 +95,48 @@ header a {
 .product-hover {
   display: none;
 }
+
+.img-container {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 10px;
+  background-color: white;
+  max-width: 50px;
+}
+
+.heart svg {
+  width: 1.5rem;
+}
+
+.heart:hover svg {
+  fill: red;
+}
+
+.banner {
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  font-weight: 600;
+}
+
+.sconto {
+  color: white;
+  background-color: red;
+  padding: 5px 10px;
+}
+
+.sostenibili {
+  margin-left: 5px;
+  color: white;
+  background-color: green;
+  padding: 5px 10px;
+}
+
 .product-name {
   font-weight: bold;
 }
@@ -124,4 +171,8 @@ footer a {
   display: inline-block;
   padding: 10px 0px;
   padding-right: 7px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
